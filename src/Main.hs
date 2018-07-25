@@ -20,6 +20,9 @@ runTests = hspec $ do
         it "m2 to m3" $
             fixFromPos 1 m2 `shouldBe` m3
 
+
+-- Example from https://www.youtube.com/watch?v=xCIXkm3-ocQ
+
 am = AM
     [ Equation [1,-1,-1,1]   0
     , Equation [2,0,2,0]     8
@@ -38,6 +41,9 @@ am3 = AM
     , Equation [0,0,0,-1]  (-4)
     , Equation [0,0,1,1 ]    7 ]
 
+
+-- Example from https://en.wikipedia.org/wiki/Gaussian_elimination
+
 m = AM
     [ Equation [1,3,1]     9
     , Equation [1,1,-1]    1
@@ -52,6 +58,7 @@ m3 = AM
     [ Equation [1,3,1]     9
     , Equation [0,-2,-2] (-8)
     , Equation [0,0,0]     0 ]
+
 
 type Numbertype = Rational
 
